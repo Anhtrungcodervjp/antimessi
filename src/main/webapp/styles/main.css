@@ -1,0 +1,127 @@
+/* styles/main.css */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f2f4f7;
+    color: #22262a;
+    max-width: 720px;
+    margin: 40px auto;
+    padding: 0 20px 60px;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4px;
+    color: #1a2b4c;
+}
+
+h2 {
+    font-size: 1.15rem;
+    margin-top: 28px;
+    margin-bottom: 10px;
+    color: #1a2b4c;
+    border-left: 4px solid #4b6cb7;
+    padding-left: 8px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #d7dbe0;
+    margin: 24px 0;
+}
+
+form {
+    background: #ffffff;
+    padding: 24px 28px;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+form p {
+    margin: 14px 0;
+}
+
+label {
+    display: inline-block;
+    min-width: 120px;
+    font-weight: 600;
+    color: #384250;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    max-width: 320px;
+    padding: 8px 10px;
+    border: 1px solid #c7ccd4;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    background-color: #fafbfc;
+    transition: border-color 0.15s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+    outline: none;
+    border-color: #4b6cb7;
+    box-shadow: 0 0 0 3px rgba(75, 108, 183, 0.15);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 6px;
+    accent-color: #4b6cb7;
+}
+
+/* radio group: moi lua chon 1 dong, o tron ngang hang voi chu */
+h2 + p input[type="radio"] {
+    vertical-align: middle;
+    margin-top: 0;
+}
+
+h2 + p label {
+    display: inline-flex;
+    align-items: center;
+    min-width: unset;
+    font-weight: normal;
+    margin-left: 4px;
+    vertical-align: middle;
+}
+
+/* ep xuong dong sau moi cap radio + label */
+h2 + p label::after {
+    content: "";
+    display: block;
+    height: 10px;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    background-color: #4b6cb7;
+    color: #fff;
+    border: none;
+    padding: 10px 26px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #3a568f;
+}
